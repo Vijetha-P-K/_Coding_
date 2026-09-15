@@ -1,39 +1,56 @@
-An Armstrong Number (also called a Narcissistic Number) is a number that equals the sum of its own digits, each raised to the power of the total number of digits in the number.
+# 🔢 NUMBER BALANCE
 
-Example: 153 has 3 digits. 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153 -> equals itself, so 153 is Armstrong.
+Given an integer **N**, examine each of its digits.
 
-Given two integers L and R, find all Armstrong Numbers in the inclusive range [L, R] and print them in increasing order, followed by their count.
+Calculate:
 
-Input Format
+* **evenSum**: the sum of all **even digits**
+* **oddSum**: the sum of all **odd digits**
 
-Two space-separated integers L and R on a single line.
+After processing all digits, print:
 
-Constraints
+* **"Balanced"** if `evenSum` is equal to `oddSum` ⚖️
+* **"Even Dominant"** if `evenSum` is greater than `oddSum` 🟢
+* **"Odd Dominant"** if `oddSum` is greater than `evenSum` 🟠
 
-1 <= L <= R <= 10000
+The number must be **processed digit by digit** 🔍.
 
-Output Format
+### 📥 Input Format:
 
-Print all Armstrong Numbers in the range, separated by spaces, in increasing order. On the next line, print "Count = X" where X is the total number found. If none exist, print an empty line followed by "Count = 0".
+The input contains a single integer **N**.
 
-Sample Input 0
+### 📌 Constraints:
 
-1 500
-Sample Output 0
+**1 <= N <= 10^9**
 
-1 2 3 4 5 6 7 8 9 153 370 371 407
-Count = 13
-Sample Input 1
+### 📤 Output Format:
 
-100 999
-Sample Output 1
+Print **"Balanced"** if the sum of even digits is equal to the sum of odd digits.
 
-153 370 371 407
-Count = 4
-Sample Input 2
+Print **"Even Dominant"** if the sum of even digits is greater than the sum of odd digits.
 
-1 10
-Sample Output 2
+Print **"Odd Dominant"** if the sum of odd digits is greater than the sum of even digits.
 
-1 2 3 4 5 6 7 8 9
-Count = 9
+### 🧪 Sample Input 0:
+
+```text
+1234
+```
+
+### ✅ Sample Output 0:
+
+```text
+Even Dominant
+```
+
+### 🧪 Sample Input 1:
+
+```text
+1132
+```
+
+### ✅ Sample Output 1:
+
+```text
+Odd Dominant
+```

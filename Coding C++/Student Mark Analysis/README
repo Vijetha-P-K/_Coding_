@@ -1,0 +1,107 @@
+📊 STUDENT MARK ANALYSIS SYSTEM
+A Student Mark Analysis System helps teachers analyze class performance by calculating average marks, finding toppers, counting pass/fail students, sorting marks, searching for specific marks, and updating marks dynamically.
+
+💡 Example:
+5 students with marks: 78 85 92 67 88
+
+Average: (78 + 85 + 92 + 67 + 88) / 5 = 82.0
+
+Highest: 92 at position 2
+
+Lowest: 67 at position 3
+
+Pass (≥75): 4 students (78, 85, 92, 88)
+
+Fail (<75): 1 student (67)
+
+Sorted: 67 78 85 88 92
+
+Top 3: 92 88 85
+
+→ Complete analysis generated! ✅
+
+Given N students and their marks, perform complete analysis including average, highest/lowest, pass/fail count, sorting, searching, and updating marks.
+
+📥 Input Format
+First line: Integer N (number of students)
+
+Second line: N space-separated integers (marks of each student)
+
+Then interactive input for search and update operations
+
+📌 Constraints
+1 ≤ N ≤ 100
+
+0 ≤ Marks ≤ 100
+
+All marks are integers
+
+Pass mark is 75
+
+📤 Output Format
+Print Original Marks
+
+Print Class Average (1 decimal place)
+
+Print Highest Mark
+
+Print Lowest Mark
+
+Print Topper Position (0-based index)
+
+Print Pass Count (marks ≥ 75)
+
+Print Fail Count (marks < 75)
+
+Print Sorted Marks (ascending order)
+
+Print Top 3 Students marks
+
+Search Operation:
+
+Prompt: "Enter mark to search: "
+
+Print mark positions or "Mark not found"
+
+Update Operation:
+
+Prompt: "Enter position to update: "
+
+Prompt: "Enter extra marks: "
+
+Print Updated Marks
+
+🧪 Sample Input 0
+text
+5
+78 85 92 67 88
+✅ Sample Output 0
+text
+Original Marks: 78 85 92 67 88
+
+Class Average: 82.0
+Highest Mark: 92
+Lowest Mark: 67
+Topper Position: 2
+
+Pass Count: 4
+Fail Count: 1
+
+Sorted Marks: 67 78 85 88 92
+
+Top 3 Students: 92 88 85
+
+Enter mark to search: 85
+Mark 85 found at position: 1
+
+Enter position to update: 2
+Enter extra marks: 5
+Updated Marks: 78 85 97 67 88
+
+🏷️ Difficulty Level
+🔵 Easy
+
+
+Happy Coding! 💻✨
+
+

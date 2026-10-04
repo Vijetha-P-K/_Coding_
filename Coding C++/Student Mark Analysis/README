@@ -1,7 +1,9 @@
 📊 STUDENT MARK ANALYSIS SYSTEM
-A Student Mark Analysis System helps teachers analyze class performance by calculating average marks, finding toppers, counting pass/fail students, sorting marks, searching for specific marks, and updating marks dynamically.
+
+A Student Mark Analysis System helps teachers analyze class performance by calculating the average marks, finding the highest and lowest marks, identifying the topper, counting pass/fail students, sorting marks, searching for specific marks, and updating marks dynamically.
 
 💡 Example:
+
 5 students with marks: 78 85 92 67 88
 
 Average: (78 + 85 + 92 + 67 + 88) / 5 = 82.0
@@ -23,13 +25,15 @@ Top 3: 92 88 85
 Given N students and their marks, perform complete analysis including average, highest/lowest, pass/fail count, sorting, searching, and updating marks.
 
 📥 Input Format
+
 First line: Integer N (number of students)
 
 Second line: N space-separated integers (marks of each student)
 
-Then interactive input for search and update operations
+Then interactive input for search and update operations.
 
 📌 Constraints
+
 1 ≤ N ≤ 100
 
 0 ≤ Marks ≤ 100
@@ -39,6 +43,7 @@ All marks are integers
 Pass mark is 75
 
 📤 Output Format
+
 Print Original Marks
 
 Print Class Average (1 decimal place)
@@ -59,24 +64,29 @@ Print Top 3 Students marks
 
 Search Operation:
 
-Prompt: "Enter mark to search: "
+Prompt:
 
-Print mark positions or "Mark not found"
+Enter mark to search:
+
+Print mark positions or Mark not found
 
 Update Operation:
 
-Prompt: "Enter position to update: "
+Prompt:
 
-Prompt: "Enter extra marks: "
+Enter position to update:
+
+Prompt:
+
+Enter extra marks:
 
 Print Updated Marks
 
 🧪 Sample Input 0
-text
 5
 78 85 92 67 88
+
 ✅ Sample Output 0
-text
 Original Marks: 78 85 92 67 88
 
 Class Average: 82.0
@@ -99,9 +109,7 @@ Enter extra marks: 5
 Updated Marks: 78 85 97 67 88
 
 🏷️ Difficulty Level
+
 🔵 Easy
 
-
 Happy Coding! 💻✨
-
-

@@ -19,4 +19,5 @@ int main() {
 	    int m1 = m * x;
 	    cout << m1 << "\n";
 	}
+	return 0;
 }

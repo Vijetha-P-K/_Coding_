@@ -1,0 +1,80 @@
+# 🎓 EXAMS
+
+The **Exams** problem is about determining whether the percentage of students who passed the exams in Chefland is **strictly greater than 50%**.
+
+There are **X schools**, and each school has **Y students**. A total of **Z students** passed the exams.
+
+### 💡 Example:
+
+**X = 2, Y = 10, Z = 12**
+
+First, calculate the total number of students who appeared for the exams.
+
+\[
+\text{Total Students} = X \times Y
+\]
+
+\[
+= 2 \times 10 = 20
+\]
+
+Next, calculate the percentage of students who passed.
+
+\[
+\text{Pass Percentage} = \frac{Z}{X \times Y}\times 100
+\]
+
+\[
+= \frac{12}{20}\times 100 = 60\%
+\]
+
+Since **60% > 50%**, the number of students who passed is strictly greater than 50%.
+
+→ **Output: YES** ✅
+
+Given three integers **X, Y, and Z**, determine whether the number of students who passed is strictly greater than 50% of the total number of students.
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, denoting the number of test cases.
+- Each test case contains three space-separated integers **X, Y, and Z**, representing the number of schools, the number of students in each school, and the total number of students who passed, respectively.
+
+### 📌 Constraints
+
+**1 <= T <= 2 × 10⁴**
+
+**1 <= X <= 5**
+
+**1 <= Y <= 50**
+
+**0 <= Z <= X × Y**
+
+### 📤 Output Format
+
+For each test case, print **"YES"** if the number of students who passed is strictly greater than 50% of the total number of students. Otherwise, print **"NO"**.
+
+### 🧪 Sample Input 0
+
+```text
+4
+2 10 12
+2 10 3
+1 5 3
+3 6 9
+```
+
+### ✅ Sample Output 0
+
+```text
+YES
+NO
+YES
+NO
+```
+
+### 📝 Explanation
+
+- **Test Case 1:** Total students = 2 × 10 = 20. Passed students = 12. Pass percentage = 60%. Since 60% > 50%, the output is **YES**.
+- **Test Case 2:** Total students = 2 × 10 = 20. Passed students = 3. Pass percentage = 15%. Since 15% is less than 50%, the output is **NO**.
+- **Test Case 3:** Total students = 1 × 5 = 5. Passed students = 3. Pass percentage = 60%. Since 60% > 50%, the output is **YES**.
+- **Test Case 4:** Total students = 3 × 6 = 18. Passed students = 9. Pass percentage = 50%. Since 50% is equal to 50%, not strictly greater, the output is **NO**.

@@ -1,0 +1,56 @@
+# 📝 JANMANSH AND ASSIGNMENTS
+
+The **Janmansh and Assignments** problem is about determining whether Janmansh can complete all his assignments before the deadline of **10 PM**.
+
+Janmansh has to complete **3 assignments**, and each assignment takes **1 hour**. He starts working at **X PM**.
+
+### 💡 Example:
+
+**X = 7**
+
+Janmansh starts doing his assignments at 7 PM.
+
+- First assignment: 7 PM – 8 PM
+- Second assignment: 8 PM – 9 PM
+- Third assignment: 9 PM – 10 PM
+
+He finishes all three assignments by 10 PM.
+
+→ **Output: Yes** ✅
+
+Given an integer **X**, representing the time when Janmansh starts his assignments, determine whether he can complete all three assignments by 10 PM.
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, denoting the number of test cases.
+- Each test case contains a single integer **X**, representing the time when Janmansh starts doing the assignments.
+
+### 📌 Constraints
+
+**1 <= T <= 10**
+
+**1 <= X <= 9**
+
+### 📤 Output Format
+
+For each test case, print **"Yes"** if Janmansh can complete all three assignments by 10 PM. Otherwise, print **"No"**.
+
+### 🧪 Sample Input 0
+
+```text
+2
+7
+9
+```
+
+### ✅ Sample Output 0
+
+```text
+Yes
+No
+```
+
+### 📝 Explanation
+
+- **Test Case 1:** Janmansh starts at 7 PM. He needs 3 hours to complete all assignments and finishes at 10 PM. Therefore, the output is **Yes**.
+- **Test Case 2:** Janmansh starts at 9 PM. He needs 3 hours and would finish at 12 AM, which is after the deadline. Therefore, the output is **No**.

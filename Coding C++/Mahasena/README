@@ -1,0 +1,116 @@
+# ⚔️ MAHASENA
+
+The **Mahasena** problem is about determining whether an army is **"READY FOR BATTLE"** based on the number of lucky and unlucky soldiers.
+
+A soldier is considered **lucky** if they hold an even number of weapons and **unlucky** if they hold an odd number of weapons.
+
+The army is **"READY FOR BATTLE"** only when the number of lucky soldiers is strictly greater than the number of unlucky soldiers. Otherwise, the army is **"NOT READY"**.
+
+### 💡 Example:
+
+**N = 4, A = [11, 12, 13, 14]**
+
+Count the lucky and unlucky soldiers:
+
+- **11** → Odd → Unlucky
+- **12** → Even → Lucky
+- **13** → Odd → Unlucky
+- **14** → Even → Lucky
+
+Number of lucky soldiers = 2
+
+Number of unlucky soldiers = 2
+
+Since the number of lucky soldiers is not strictly greater than the number of unlucky soldiers, the army is not ready for battle.
+
+→ **Output: NOT READY** ❌
+
+Given the number of weapons held by each soldier, determine whether the army is ready for battle.
+
+### 📥 Input Format
+
+- The first line contains a single integer **N**, denoting the number of soldiers.
+- The second line contains **N** space-separated integers **A₁, A₂, ..., Aₙ**, where **Aᵢ** represents the number of weapons held by the *i*th soldier.
+
+### 📌 Constraints
+
+**1 <= N <= 100**
+
+**1 <= Aᵢ <= 100**
+
+### 📤 Output Format
+
+Print **"READY FOR BATTLE"** if the number of lucky soldiers is strictly greater than the number of unlucky soldiers. Otherwise, print **"NOT READY"**.
+
+### 🧪 Sample Input 0
+
+```text id="mhs01"
+1
+1
+```
+
+### ✅ Sample Output 0
+
+```text id="mhs02"
+NOT READY
+```
+
+### 🧪 Sample Input 1
+
+```text id="mhs03"
+1
+2
+```
+
+### ✅ Sample Output 1
+
+```text id="mhs04"
+READY FOR BATTLE
+```
+
+### 🧪 Sample Input 2
+
+```text id="mhs05"
+4
+11 12 13 14
+```
+
+### ✅ Sample Output 2
+
+```text id="mhs06"
+NOT READY
+```
+
+### 🧪 Sample Input 3
+
+```text id="mhs07"
+3
+2 3 4
+```
+
+### ✅ Sample Output 3
+
+```text id="mhs08"
+READY FOR BATTLE
+```
+
+### 🧪 Sample Input 4
+
+```text id="mhs09"
+5
+1 2 3 4 5
+```
+
+### ✅ Sample Output 4
+
+```text id="mhs10"
+NOT READY
+```
+
+### 📝 Explanation
+
+- **Test Case 0:** The only soldier holds 1 weapon, which is odd. Lucky soldiers = 0, unlucky soldiers = 1. Therefore, the output is **NOT READY**.
+- **Test Case 1:** The only soldier holds 2 weapons, which is even. Lucky soldiers = 1, unlucky soldiers = 0. Therefore, the output is **READY FOR BATTLE**.
+- **Test Case 2:** Two soldiers hold an even number of weapons, and two hold an odd number. Since the counts are equal, the output is **NOT READY**.
+- **Test Case 3:** Two soldiers hold an even number of weapons, and one holds an odd number. Since lucky soldiers are greater in number, the output is **READY FOR BATTLE**.
+- **Test Case 4:** Two soldiers hold an even number of weapons, and three hold an odd number. Since unlucky soldiers are greater in number, the output is **NOT READY**.

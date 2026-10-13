@@ -1,0 +1,63 @@
+# 🧑‍💻 CHEF IN HIS OFFICE
+
+The **Chef in his Office** problem is about calculating the **total number of working hours in one week**.
+
+Chef works for **X hours per day from Monday to Thursday** (4 days). On Friday, called Chill Day, he works for **Y hours**. Saturday and Sunday are holidays.
+
+### 💡 Example:
+
+**X = 10, Y = 5**
+
+Chef works for 10 hours each day from Monday to Thursday and 5 hours on Friday.
+
+\[
+\text{Total Working Hours} = (4 \times X) + Y
+\]
+
+\[
+= (4 \times 10) + 5 = 45
+\]
+
+→ **Total working hours = 45 hours.** ✅
+
+Given two integers **X and Y**, determine the total number of working hours Chef works in one week.
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, denoting the number of test cases.
+- Each test case contains two space-separated integers **X and Y**, representing the working hours from Monday to Thursday and the working hours on Friday, respectively.
+
+### 📌 Constraints
+
+**1 <= T <= 100**
+
+**2 <= X <= 12**
+
+**1 <= Y < X**
+
+### 📤 Output Format
+
+For each test case, print the **total number of working hours in one week**.
+
+### 🧪 Sample Input 0
+
+```text
+3
+10 5
+12 2
+8 7
+```
+
+### ✅ Sample Output 0
+
+```text
+45
+50
+39
+```
+
+### 📝 Explanation
+
+- **Test Case 1:** Chef works 10 hours each from Monday to Thursday and 5 hours on Friday. Total = 10 + 10 + 10 + 10 + 5 = **45 hours**.
+- **Test Case 2:** Chef works 12 hours each from Monday to Thursday and 2 hours on Friday. Total = 12 + 12 + 12 + 12 + 2 = **50 hours**.
+- **Test Case 3:** Chef works 8 hours each from Monday to Thursday and 7 hours on Friday. Total = 8 + 8 + 8 + 8 + 7 = **39 hours**.

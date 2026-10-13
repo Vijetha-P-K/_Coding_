@@ -1,0 +1,65 @@
+# 📺 SUBSCRIPTIONS
+
+The **Subscriptions** problem is about finding the **minimum total cost required to provide a TV subscription to a group of N friends**.
+
+Each Chef-TV subscription can be shared by **6 people**, and the cost of one subscription is **X rupees**.
+
+### 💡 Example:
+
+**N = 12, X = 250**
+
+Each subscription can be shared by 6 people.
+
+\[
+\text{Subscriptions Required} = \frac{12}{6} = 2
+\]
+
+\[
+\text{Total Cost} = 2 \times 250 = 500
+\]
+
+→ **Minimum total cost = 500 rupees.** ✅
+
+Given two integers **N** and **X**, determine the minimum total cost required so that all N friends can use Chef-TV.
+
+If the number of friends is not divisible by 6, an additional subscription must be purchased to accommodate the remaining friends.
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, denoting the number of test cases.
+- Each test case contains two space-separated integers **N** and **X**, representing the number of friends and the cost of one subscription, respectively.
+
+### 📌 Constraints
+
+**1 <= T <= 1000**
+
+**1 <= N <= 100**
+
+**1 <= X <= 1000**
+
+### 📤 Output Format
+
+For each test case, print the **minimum total cost** required to provide a subscription to every friend.
+
+### 🧪 Sample Input 0
+
+```text
+3
+1 100
+12 250
+16 135
+```
+
+### ✅ Sample Output 0
+
+```text
+100
+500
+405
+```
+
+### 📝 Explanation
+
+- **Test Case 1:** There is only 1 friend. One subscription is required. Total cost = 1 × 100 = **100**.
+- **Test Case 2:** There are 12 friends. Two subscriptions are required because each subscription supports 6 people. Total cost = 2 × 250 = **500**.
+- **Test Case 3:** There are 16 friends. Three subscriptions are required because two subscriptions can accommodate only 12 people. Total cost = 3 × 135 = **405**.

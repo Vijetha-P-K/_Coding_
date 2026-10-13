@@ -1,0 +1,67 @@
+# 🪙 CRED COINS
+
+The **CRED Coins** problem is about finding the **maximum number of bags Chef can purchase from the CodeChef store** using the CRED coins he earns.
+
+For each bill paid using CRED, Chef earns **X CRED coins**. He pays **Y bills**, and each bag at the CodeChef store costs **100 CRED coins**.
+
+### 💡 Example:
+
+**X = 10, Y = 10**
+
+First, calculate the total number of CRED coins earned.
+
+\[
+\text{Total Coins} = X \times Y
+\]
+
+\[
+= 10 \times 10 = 100
+\]
+
+Each bag costs 100 CRED coins.
+
+\[
+\text{Number of Bags} = \frac{100}{100} = 1
+\]
+
+→ **Maximum number of bags = 1.** ✅
+
+Given two integers **X and Y**, determine the maximum number of bags Chef can get using the CRED coins he earns.
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, denoting the number of test cases.
+- Each test case contains two space-separated integers **X and Y**, representing the CRED coins earned per bill and the number of bills paid using CRED, respectively.
+
+### 📌 Constraints
+
+**1 <= T <= 100**
+
+**1 <= X, Y <= 1000**
+
+### 📤 Output Format
+
+For each test case, print the **maximum number of bags** Chef can get from the CodeChef store.
+
+### 🧪 Sample Input 0
+
+```text id="cred01"
+3
+10 10
+20 4
+70 7
+```
+
+### ✅ Sample Output 0
+
+```text id="cred02"
+1
+0
+4
+```
+
+### 📝 Explanation
+
+- **Test Case 1:** Chef earns 10 × 10 = 100 CRED coins. Since each bag costs 100 coins, he can get **1 bag**.
+- **Test Case 2:** Chef earns 20 × 4 = 80 CRED coins. Since 80 is less than 100, he cannot get any bag. Therefore, the output is **0**.
+- **Test Case 3:** Chef earns 70 × 7 = 490 CRED coins. Each bag costs 100 coins, so he can get a maximum of **4 bags**, with 90 coins remaining.

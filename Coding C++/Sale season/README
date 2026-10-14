@@ -1,0 +1,69 @@
+# 🛍️ SALE SEASON
+
+The **Sale Season** problem is about calculating the **final amount Chef needs to pay after applying the discount** based on the total shopping amount.
+
+The discount depends on the total amount **X** spent by Chef.
+
+- If **X <= 100**, there is no discount.
+- If **100 < X <= 1000**, the discount is **25 rupees**.
+- If **1000 < X <= 5000**, the discount is **100 rupees**.
+- If **X > 5000**, the discount is **500 rupees**.
+
+### 💡 Example:
+
+**X = 250**
+
+Since 250 is greater than 100 and less than or equal to 1000, Chef receives a discount of 25 rupees.
+
+\[
+\text{Final Amount} = X - \text{Discount}
+\]
+
+\[
+= 250 - 25 = 225
+\]
+
+→ **Final amount = 225 rupees.** ✅
+
+Given an integer **X**, determine the final amount Chef needs to pay after applying the applicable discount.
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, denoting the number of test cases.
+- Each test case contains a single integer **X**, representing the total amount spent by Chef.
+
+### 📌 Constraints
+
+**1 <= T <= 100**
+
+**1 <= X <= 10000**
+
+### 📤 Output Format
+
+For each test case, print the **final amount Chef needs to pay** after applying the discount.
+
+### 🧪 Sample Input 0
+
+```text
+4
+15
+70
+250
+1000
+```
+
+### ✅ Sample Output 0
+
+```text
+15
+70
+225
+975
+```
+
+### 📝 Explanation
+
+- **Test Case 1:** X = 15. Since X <= 100, there is no discount. Final amount = **15 rupees**.
+- **Test Case 2:** X = 70. Since X <= 100, there is no discount. Final amount = **70 rupees**.
+- **Test Case 3:** X = 250. Since 100 < 250 <= 1000, the discount is 25 rupees. Final amount = 250 - 25 = **225 rupees**.
+- **Test Case 4:** X = 1000. Since 100 < 1000 <= 1000, the discount is 25 rupees. Final amount = 1000 - 25 = **975 rupees**.

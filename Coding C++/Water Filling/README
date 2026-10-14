@@ -1,0 +1,70 @@
+# 💧 WATER FILLING
+
+The **Water Filling** problem is about determining whether Chef needs to refill her water bottles based on how many bottles are empty.
+
+Chef has **3 water bottles**. If at least **2 bottles are empty**, she will fill them up. Otherwise, she will wait.
+
+- **Bᵢ = 1** means the bottle is full.
+- **Bᵢ = 0** means the bottle is empty.
+
+### 💡 Example:
+
+**B1 = 0, B2 = 1, B3 = 0**
+
+Check the status of each bottle:
+
+- First bottle → Empty
+- Second bottle → Full
+- Third bottle → Empty
+
+Number of empty bottles = 2.
+
+Since at least 2 bottles are empty, Chef needs to refill them.
+
+→ **Output: Water filling time** ✅
+
+Given three integers **B1, B2, and B3**, determine whether Chef needs to fill the bottles now.
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, denoting the number of test cases.
+- Each test case contains three space-separated integers **B1, B2, and B3**, representing the status of the three water bottles.
+
+### 📌 Constraints
+
+**1 <= T <= 1000**
+
+**Bᵢ ∈ {0, 1}**
+
+### 📤 Output Format
+
+For each test case, print **"Water filling time"** if at least two bottles are empty. Otherwise, print **"Not now"**.
+
+### 🧪 Sample Input 0
+
+```text
+5
+0 0 0
+1 1 1
+1 1 0
+0 1 0
+0 1 1
+```
+
+### ✅ Sample Output 0
+
+```text
+Water filling time
+Not now
+Not now
+Water filling time
+Not now
+```
+
+### 📝 Explanation
+
+- **Test Case 1:** All three bottles are empty. Since at least two bottles are empty, the output is **Water filling time**.
+- **Test Case 2:** All three bottles are full. No refill is needed, so the output is **Not now**.
+- **Test Case 3:** Only the third bottle is empty. Since just one bottle is empty, the output is **Not now**.
+- **Test Case 4:** The first and third bottles are empty. Since two bottles are empty, the output is **Water filling time**.
+- **Test Case 5:** Only the first bottle is empty. Since just one bottle is empty, the output is **Not now**.

@@ -1,0 +1,72 @@
+# 🍕 MINIMUM PIZZAS
+
+The **Minimum Pizzas** problem is about finding the **minimum number of pizzas required to satisfy the appetite of all friends**.
+
+Each pizza contains **4 slices**. There are **N friends**, and each friend needs exactly **X slices**.
+
+### 💡 Example:
+
+**N = 2, X = 6**
+
+First, calculate the total number of slices required by all friends.
+
+\[
+\text{Total Slices} = N \times X
+\]
+
+\[
+= 2 \times 6 = 12
+\]
+
+Each pizza contains 4 slices.
+
+\[
+\text{Minimum Pizzas} = \frac{12}{4} = 3
+\]
+
+→ **Minimum number of pizzas = 3.** ✅
+
+Given two integers **N and X**, determine the minimum number of pizzas required to provide enough slices for all friends.
+
+If the total number of slices is not divisible by 4, one additional pizza is needed to accommodate the remaining slices.
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, denoting the number of test cases.
+- Each test case contains two space-separated integers **N and X**, representing the number of friends and the number of slices required by each friend, respectively.
+
+### 📌 Constraints
+
+**1 <= T <= 100**
+
+**1 <= N, X <= 10**
+
+### 📤 Output Format
+
+For each test case, print the **minimum number of pizzas required** to satisfy all friends.
+
+### 🧪 Sample Input 0
+
+```text id="piz001"
+4
+1 5
+2 6
+4 3
+3 5
+```
+
+### ✅ Sample Output 0
+
+```text id="piz002"
+2
+3
+3
+4
+```
+
+### 📝 Explanation
+
+- **Test Case 1:** One friend needs 5 slices. One pizza provides only 4 slices, so 2 pizzas are required.
+- **Test Case 2:** Two friends need 6 slices each. Total slices = 2 × 6 = 12. Therefore, 12 / 4 = **3 pizzas** are required.
+- **Test Case 3:** Four friends need 3 slices each. Total slices = 4 × 3 = 12. Therefore, **3 pizzas** are required.
+- **Test Case 4:** Three friends need 5 slices each. Total slices = 3 × 5 = 15. Since each pizza provides 4 slices, **4 pizzas** are required.

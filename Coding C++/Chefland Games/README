@@ -1,0 +1,63 @@
+# 🎾 CHEFLAND GAMES
+
+The **Chefland Games** problem is about determining whether a tennis ball is considered **inside limits (IN)** or **outside limits (OUT)** based on the decisions of four referees.
+
+There are **4 referees**, and each referee gives one of two decisions:
+
+- **Rᵢ = 0** means the referee considers the ball to be inside limits.
+- **Rᵢ = 1** means the referee considers the ball to be outside limits.
+
+The ball is considered **IN only if all four referees agree that it is inside limits**. If even one referee says OUT, the final decision is OUT.
+
+### 💡 Example:
+
+**R1 = 0, R2 = 0, R3 = 0, R4 = 0**
+
+All four referees consider the ball to be inside limits.
+
+Since all referees agree, the ball is inside limits.
+
+→ **Output: IN** ✅
+
+Given the decisions of the four referees, determine whether the ball is considered inside or outside limits.
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, denoting the number of test cases.
+- Each test case contains four space-separated integers **R1, R2, R3, and R4**, representing the decisions of the four referees.
+
+### 📌 Constraints
+
+**1 <= T <= 20**
+
+**0 <= Rᵢ <= 1**
+
+### 📤 Output Format
+
+For each test case, print **"IN"** if all four referees consider the ball to be inside limits. Otherwise, print **"OUT"**.
+
+### 🧪 Sample Input 0
+
+```text
+4
+1 1 0 0
+0 0 0 0
+0 0 0 1
+1 1 1 1
+```
+
+### ✅ Sample Output 0
+
+```text
+OUT
+IN
+OUT
+OUT
+```
+
+### 📝 Explanation
+
+- **Test Case 1:** The first and second referees consider the ball to be outside limits. Therefore, the output is **OUT**.
+- **Test Case 2:** All four referees consider the ball to be inside limits. Therefore, the output is **IN**.
+- **Test Case 3:** The fourth referee considers the ball to be outside limits. Therefore, the output is **OUT**.
+- **Test Case 4:** All four referees consider the ball to be outside limits. Therefore, the output is **OUT**.

@@ -1,0 +1,66 @@
+# 🏆 EXPERT SETTER
+
+A problem setter is called an **Expert** if **at least 50%** of their submitted problems are approved by Chef.
+
+Munchy submitted **X** problems for approval, and **Y** problems were approved.
+
+To determine whether Munchy is an expert, check whether the percentage of approved problems is **greater than or equal to 50%**.
+
+### 💡 Example:
+
+**X = 5, Y = 3**
+
+The percentage of approved problems is:
+
+\[
+\frac{Y}{X}\times 100 = \frac{3}{5}\times 100 = 60\%
+\]
+
+Since **60% is greater than 50%**, Munchy is an expert.
+
+→ **Output: YES** ✅
+
+Given the number of submitted problems **X** and approved problems **Y**, determine whether Munchy is an expert.
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, denoting the number of test cases.
+- Each test case contains two space-separated integers **X** and **Y**, representing the number of problems submitted and the number of problems approved by Chef, respectively.
+
+### 📌 Constraints
+
+**1 ≤ T ≤ 1000**
+
+**1 ≤ Y ≤ X ≤ 10⁶**
+
+### 📤 Output Format
+
+For each test case, print **"YES"** if Munchy is an expert. Otherwise, print **"NO"**.
+
+The output is case-insensitive.
+
+### 🧪 Sample Input 0
+
+```text
+4
+5 3
+1 1
+4 1
+2 1
+```
+
+### ✅ Sample Output 0
+
+```text
+YES
+YES
+NO
+YES
+```
+
+### 📝 Explanation
+
+- **Test Case 1:** 3 out of 5 problems were approved. The approval percentage is **60%**, so the output is **YES**.
+- **Test Case 2:** 1 out of 1 problem was approved. The approval percentage is **100%**, so the output is **YES**.
+- **Test Case 3:** 1 out of 4 problems was approved. The approval percentage is **25%**, so the output is **NO**.
+- **Test Case 4:** 1 out of 2 problems was approved. The approval percentage is **50%**, so the output is **YES**.

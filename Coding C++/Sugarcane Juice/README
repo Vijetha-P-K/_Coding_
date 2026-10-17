@@ -1,0 +1,72 @@
+# 🥤 SUGARCANE JUICE BUSINESS
+
+A juicer sells each glass of sugarcane juice for **50 coins**.
+
+From the total income, the juicer spends:
+
+- **20%** on buying sugarcane.
+- **20%** on buying salt and mint leaves.
+- **30%** on shop rent.
+
+In total, the juicer spends **70% of the income** on expenses and keeps the remaining **30% as profit**.
+
+Given the number of glasses **N** sold, calculate the juicer's profit in coins.
+
+### 💡 Example:
+
+**N = 2**
+
+Total income:
+
+\(50 \times 2 = 100\) coins
+
+Total expenses:
+
+\(70\% \times 100 = 70\) coins
+
+Profit:
+
+\(100 - 70 = 30\) coins
+
+→ **Output: 30** ✅
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, denoting the number of test cases.
+- Each test case contains a single integer **N**, representing the number of glasses of sugarcane juice sold.
+
+### 📌 Constraints
+
+**1 ≤ T ≤ 1000**
+
+**1 ≤ N ≤ 10⁶**
+
+### 📤 Output Format
+
+For each test case, print the juicer's profit in coins on a new line.
+
+### 🧪 Sample Input 0
+
+```text
+4
+2
+4
+5
+10
+```
+
+### ✅ Sample Output 0
+
+```text
+30
+60
+75
+150
+```
+
+### 📝 Explanation
+
+- **Test Case 1:** Total income = \(50 \times 2 = 100\) coins. Expenses = \(20 + 20 + 30 = 70\) coins. Profit = \(100 - 70 = 30\) coins.
+- **Test Case 2:** Total income = \(50 \times 4 = 200\) coins. Expenses = \(40 + 40 + 60 = 140\) coins. Profit = \(200 - 140 = 60\) coins.
+- **Test Case 3:** Total income = \(50 \times 5 = 250\) coins. Expenses = \(50 + 50 + 75 = 175\) coins. Profit = \(250 - 175 = 75\) coins.
+- **Test Case 4:** Total income = \(50 \times 10 = 500\) coins. Expenses = \(100 + 100 + 150 = 350\) coins. Profit = \(500 - 350 = 150\) coins.

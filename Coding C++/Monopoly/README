@@ -1,0 +1,71 @@
+# 🏢 MONOPOLY
+
+There are **4 companies** in the markets of Chefland: **A, B, C, and D**.
+
+This year, the companies made the following profits:
+
+- Company **A** made a profit of **P lakh rupees**.
+- Company **B** made a profit of **Q lakh rupees**.
+- Company **C** made a profit of **R lakh rupees**.
+- Company **D** made a profit of **S lakh rupees**.
+
+A **monopoly** exists if the profit of any one company is **strictly greater than the sum of the profits of all the other three companies**.
+
+Determine whether a monopoly exists in the market.
+
+### 💡 Example
+
+**P = 1, Q = 1, R = 1, S = 10**
+
+Company D's profit is **10 lakh rupees**.
+
+The sum of the other companies' profits is **1 + 1 + 1 = 3 lakh rupees**.
+
+Since **10 > 3**, a monopoly exists.
+
+→ **Output: YES** ✅
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, representing the number of test cases.
+- Each test case contains four space-separated integers **P, Q, R, and S**, representing the profits of companies A, B, C, and D, respectively.
+
+### 📌 Constraints
+
+- **1 ≤ T ≤ 5000**
+- **1 ≤ P, Q, R, S ≤ 100**
+
+### 📤 Output Format
+
+For each test case, print **YES** if a monopoly exists. Otherwise, print **NO**.
+
+The output is case-insensitive.
+
+### 🧪 Sample Input 0
+
+```text
+4
+1 1 1 10
+30 20 6 4
+100 90 3 4
+14 15 16 17
+```
+
+### ✅ Sample Output 0
+
+```text
+YES
+NO
+YES
+NO
+```
+
+### 📝 Explanation
+
+**Test Case 1:** Company D's profit is **10**, which is greater than the sum of the other companies' profits (**1 + 1 + 1 = 3**). Therefore, the output is **YES**.
+
+**Test Case 2:** No company's profit is strictly greater than the sum of the other three companies' profits. Therefore, the output is **NO**.
+
+**Test Case 3:** Company A's profit is **100**, which is greater than the sum of the other companies' profits (**90 + 3 + 4 = 97**). Therefore, the output is **YES**.
+
+**Test Case 4:** No company's profit is strictly greater than the sum of the other three companies' profits. Therefore, the output is **NO**.

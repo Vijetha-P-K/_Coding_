@@ -1,0 +1,76 @@
+# 🚌 NEAREST EXIT
+
+There are two exits in a bus with **100 seats**:
+
+- The **LEFT exit** is located beside seat number **1**.
+- The **RIGHT exit** is located beside seat number **100**.
+
+The seats are arranged in a straight line from **1 to 100**, with equal spacing between adjacent seats.
+
+A passenger always prefers the nearest exit while leaving the bus.
+
+Given the passenger's seat number **X**, determine which exit the passenger should choose.
+
+### 💡 Example
+
+**X = 30**
+
+- Distance to the LEFT exit = **30 - 1 = 29 seats**
+- Distance to the RIGHT exit = **100 - 30 = 70 seats**
+
+Since the LEFT exit is closer, the passenger chooses it.
+
+→ **Output: LEFT** ✅
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, representing the number of test cases.
+- Each test case contains a single integer **X**, representing the passenger's seat number.
+
+### 📌 Constraints
+
+- **1 ≤ T ≤ 100**
+- **1 ≤ X ≤ 100**
+
+### 📤 Output Format
+
+For each test case, print **LEFT** if the passenger chooses the exit beside seat number **1**. Otherwise, print **RIGHT**.
+
+The output is case-insensitive.
+
+### 🧪 Sample Input 0
+
+```text id="n4q8vz"
+6
+1
+50
+100
+30
+51
+73
+```
+
+### ✅ Sample Output 0
+
+```text id="m7p2kx"
+LEFT
+LEFT
+RIGHT
+LEFT
+RIGHT
+RIGHT
+```
+
+### 📝 Explanation
+
+**Test Case 1:** The passenger is sitting at seat **1**, right beside the LEFT exit. Therefore, the output is **LEFT**.
+
+**Test Case 2:** The passenger is sitting at seat **50**. The distance to the LEFT exit is **49 seats**, while the distance to the RIGHT exit is **50 seats**. Therefore, the output is **LEFT**.
+
+**Test Case 3:** The passenger is sitting at seat **100**, right beside the RIGHT exit. Therefore, the output is **RIGHT**.
+
+**Test Case 4:** The passenger is sitting at seat **30**. The distances to the LEFT and RIGHT exits are **29** and **70 seats**, respectively. Therefore, the output is **LEFT**.
+
+**Test Case 5:** The passenger is sitting at seat **51**. The distance to the LEFT exit is **50 seats**, while the distance to the RIGHT exit is **49 seats**. Therefore, the output is **RIGHT**.
+
+**Test Case 6:** The passenger is sitting at seat **73**. The distance to the LEFT exit is **72 seats**, while the distance to the RIGHT exit is **27 seats**. Therefore, the output is **RIGHT**.

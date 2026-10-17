@@ -1,0 +1,70 @@
+# 📚 THE THREE TOPICS
+
+Chef has reached the finals of an inter-school declamation contest, where students must prepare **10 topics**.
+
+However, Chef has prepared only three topics, numbered **A, B, and C**. He can win the contest only if he gets one of these prepared topics to speak about.
+
+On the contest day, Chef is given topic **X**.
+
+Determine whether Chef has a chance of winning the competition.
+
+- If **X = A**, **X = B**, or **X = C**, Chef has prepared the topic.
+- Otherwise, Chef has not prepared the given topic.
+
+### 💡 Example:
+
+**A = 2, B = 3, C = 7, X = 3**
+
+Chef has prepared topics **2, 3, and 7**.
+
+Since the given topic **X = 3** matches one of his prepared topics, Chef has a chance of winning.
+
+→ **Output: Yes** ✅
+
+### 📥 Input Format
+
+The input contains four space-separated integers **A, B, C, and X**, representing the three topics Chef has prepared and the topic given to him on contest day.
+
+### 📌 Constraints
+
+**1 ≤ A, B, C, X ≤ 10**
+
+**A, B, and C are distinct.**
+
+### 📤 Output Format
+
+Print **"Yes"** if Chef has prepared the given topic and has a chance of winning. Otherwise, print **"No"**.
+
+The output is case-insensitive.
+
+### 🧪 Sample Input 0
+
+```text id="m8q2vx"
+2 3 7 3
+```
+
+### ✅ Sample Output 0
+
+```text id="k4n6pt"
+Yes
+```
+
+### 📝 Explanation
+
+Chef has prepared topics **2, 3, and 7**. The given topic is **3**, which he has already prepared. Therefore, the output is **Yes**.
+
+### 🧪 Sample Input 1
+
+```text id="w5r9ja"
+4 6 8 5
+```
+
+### ✅ Sample Output 1
+
+```text id="c2v7nb"
+No
+```
+
+### 📝 Explanation
+
+Chef has prepared topics **4, 6, and 8**. The given topic is **5**, which he has not prepared. Therefore, the output is **No**.

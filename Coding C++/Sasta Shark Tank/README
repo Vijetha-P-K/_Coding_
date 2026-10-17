@@ -1,0 +1,74 @@
+# 🦈 SASTA SHARK TANK
+
+Devendra has a million-dollar business idea and needs funds to start his company. He receives offers from two investors on a TV show called **Sasta Shark Tank**.
+
+The two investors offer the following deals:
+
+- **First Investor:** Offers **A dollars** for **10%** of Devendra's company.
+- **Second Investor:** Offers **B dollars** for **20%** of Devendra's company.
+
+Devendra wants to accept the offer that gives his company a higher valuation.
+
+The valuation of the company can be calculated as:
+
+- First Investor's valuation = **A × 10**
+- Second Investor's valuation = **B × 5**
+
+Determine which investor offers the better deal.
+
+### 💡 Example
+
+**A = 200, B = 500**
+
+- First Investor's valuation = **200 × 10 = 2000 dollars**
+- Second Investor's valuation = **500 × 5 = 2500 dollars**
+
+Since the second investor values the company more highly, Devendra should accept the second investor's offer.
+
+→ **Output: SECOND** ✅
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, representing the number of test cases.
+- Each test case contains two space-separated integers **A and B**, representing the amounts offered by the first and second investors, respectively.
+
+### 📌 Constraints
+
+- **1 ≤ T ≤ 100**
+- **100 ≤ A, B ≤ 10000**
+- **A and B are multiples of 100.**
+
+### 📤 Output Format
+
+For each test case, print:
+
+- **FIRST** if the first investor's valuation is higher.
+- **SECOND** if the second investor's valuation is higher.
+- **ANY** if both valuations are equal.
+
+The output is case-insensitive.
+
+### 🧪 Sample Input 0
+
+```text id="k7m3vx"
+3
+100 200
+200 100
+200 500
+```
+
+### ✅ Sample Output 0
+
+```text id="p4n8qs"
+ANY
+FIRST
+SECOND
+```
+
+### 📝 Explanation
+
+**Test Case 1:** The first investor offers **100 dollars** for 10% of the company, giving a valuation of **1000 dollars**. The second investor offers **200 dollars** for 20%, also giving a valuation of **1000 dollars**. Both deals are equally good. Therefore, the output is **ANY**.
+
+**Test Case 2:** The first investor's valuation is **200 × 10 = 2000 dollars**, while the second investor's valuation is **100 × 5 = 500 dollars**. The first investor offers the better deal. Therefore, the output is **FIRST**.
+
+**Test Case 3:** The first investor's valuation is **200 × 10 = 2000 dollars**, while the second investor's valuation is **500 × 5 = 2500 dollars**. The second investor offers the better deal. Therefore, the output is **SECOND**.

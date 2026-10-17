@@ -1,0 +1,67 @@
+# 💻 GOOD PROGRAM
+
+In computing, a collection of **4 bits** is called a **nibble**.
+
+Chef defines a program as follows:
+
+- **Good:** If the program uses exactly **X nibbles** of memory, where X is a positive integer.
+- **Not Good:** Otherwise.
+
+Given a program that requires **N bits** of memory, determine whether the program is **Good** or **Not Good**.
+
+### 💡 Example
+
+**N = 8**
+
+Since **1 nibble = 4 bits**,
+
+Number of nibbles = **8 / 4 = 2**
+
+Since 2 is a positive integer, the program is **Good**.
+
+→ **Output: Good** ✅
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, representing the number of test cases.
+- Each test case contains a single integer **N**, representing the number of bits of memory required by the program.
+
+### 📌 Constraints
+
+- **1 ≤ T ≤ 1000**
+- **1 ≤ N ≤ 1000**
+
+### 📤 Output Format
+
+For each test case, print **Good** if the program uses a positive integer number of nibbles. Otherwise, print **Not Good**.
+
+The output is case-insensitive.
+
+### 🧪 Sample Input 0
+
+```text id="m3v8qa"
+4
+8
+17
+52
+3
+```
+
+### ✅ Sample Output 0
+
+```text id="t6k2px"
+Good
+Not Good
+Good
+Not Good
+```
+
+### 📝 Explanation
+
+**Test Case 1:** The program requires **8 bits** of memory. This equals **8 / 4 = 2 nibbles**. Since 2 is a positive integer, the program is **Good**.
+
+**Test Case 2:** The program requires **17 bits** of memory. This equals **17 / 4 = 4.25 nibbles**. Since 4.25 is not an integer, the program is **Not Good**.
+
+**Test Case 3:** The program requires **52 bits** of memory. This equals **52 / 4 = 13 nibbles**. Since 13 is a positive integer, the program is **Good**.
+
+**Test Case 4:** The program requires **3 bits** of memory. This equals **3 / 4 = 0.75 nibbles**. Since 0.75 is not an integer, the program is **Not Good**.

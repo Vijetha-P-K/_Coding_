@@ -1,0 +1,68 @@
+# 🌡️ AIR CONDITIONER TEMPERATURE
+
+There are three people sitting in a room: **Alice, Bob, and Charlie**. They need to agree on a temperature for the air conditioner.
+
+Each person has a different requirement:
+
+- Alice wants the temperature to be **at least A degrees**.
+- Bob wants the temperature to be **at most B degrees**.
+- Charlie wants the temperature to be **at least C degrees**.
+
+Determine whether they can all agree on a temperature that satisfies everyone's requirements.
+
+### 💡 Example
+
+**A = 30, B = 35, C = 35**
+
+- Alice wants the temperature to be at least **30°**.
+- Bob wants the temperature to be at most **35°**.
+- Charlie wants the temperature to be at least **35°**.
+
+The temperature **35°** satisfies all three requirements.
+
+→ **Output: Yes** ✅
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, representing the number of test cases.
+- Each test case contains three space-separated integers **A, B, and C**, representing the temperature requirements of Alice, Bob, and Charlie, respectively.
+
+### 📌 Constraints
+
+- **1 ≤ T ≤ 100**
+- **1 ≤ A, B, C ≤ 100**
+
+### 📤 Output Format
+
+For each test case, print **"Yes"** if all three people can agree on a temperature. Otherwise, print **"No"**.
+
+The output is case-insensitive.
+
+### 🧪 Sample Input 0
+
+```text id="v6m2qa"
+4
+30 35 25
+30 35 40
+30 35 35
+30 25 35
+```
+
+### ✅ Sample Output 0
+
+```text id="k9r4sx"
+Yes
+No
+Yes
+No
+```
+
+### 📝 Explanation
+
+**Test Case 1:** Alice requires a temperature of at least **30°**, Bob requires at most **35°**, and Charlie requires at least **25°**. Temperatures from **30° to 35°** satisfy everyone's requirements. Therefore, the answer is **Yes**.
+
+**Test Case 2:** Charlie requires at least **40°**, but Bob allows at most **35°**. No temperature can satisfy both requirements. Therefore, the answer is **No**.
+
+**Test Case 3:** Alice requires at least **30°**, Bob allows at most **35°**, and Charlie requires at least **35°**. A temperature of **35°** satisfies all three requirements. Therefore, the answer is **Yes**.
+
+**Test Case 4:** Alice requires at least **30°**, but Bob allows at most **25°**. No temperature can satisfy both requirements. Therefore, the answer is **No**.

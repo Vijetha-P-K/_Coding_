@@ -1,0 +1,61 @@
+# 🚗 MINIMUM CARS REQUIRED
+
+A single car can accommodate at most **4 people**.
+
+There are **N friends** who want to go to a restaurant for a party. Determine the **minimum number of cars** required to accommodate all the friends.
+
+### 💡 Example
+
+**N = 7**
+
+Each car can accommodate a maximum of **4 people**.
+
+- First car: 4 people
+- Second car: 3 people
+
+Therefore, **2 cars** are required to accommodate all 7 friends.
+
+→ **Output: 2** ✅
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, representing the number of test cases.
+- Each test case contains a single integer **N**, representing the number of friends.
+
+### 📌 Constraints
+
+- **1 ≤ T ≤ 1000**
+- **2 ≤ N ≤ 1000**
+
+### 📤 Output Format
+
+For each test case, print the minimum number of cars required to accommodate all the friends.
+
+### 🧪 Sample Input 0
+
+```text id="q7m3vx"
+4
+4
+2
+7
+98
+```
+
+### ✅ Sample Output 0
+
+```text id="p5k8rz"
+1
+1
+2
+25
+```
+
+### 📝 Explanation
+
+**Test Case 1:** There are **4 friends**. Since one car can accommodate 4 people, only **1 car** is required.
+
+**Test Case 2:** There are **2 friends**. Both can travel in a single car. Therefore, **1 car** is required.
+
+**Test Case 3:** There are **7 friends**. Two cars can accommodate up to 8 people. Therefore, **2 cars** are required.
+
+**Test Case 4:** There are **98 friends**. Each car accommodates 4 people, so 24 cars can accommodate only 96 friends. One additional car is needed for the remaining 2 friends. Therefore, **25 cars** are required.

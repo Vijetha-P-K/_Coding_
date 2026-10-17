@@ -1,0 +1,67 @@
+# 🚗 CAR OR BIKE
+
+Chef wants to reach home as quickly as possible. He has two travel options:
+
+- **BIKE:** Takes **X minutes**.
+- **CAR:** Takes **Y minutes**.
+
+Determine which option is faster by comparing the time taken by the bike and the car.
+
+- If **X < Y**, the bike is faster.
+- If **Y < X**, the car is faster.
+- If **X = Y**, both take the same time.
+
+### 💡 Example:
+
+**X = 1, Y = 5**
+
+- Bike takes **1 minute**.
+- Car takes **5 minutes**.
+
+Since the bike takes less time than the car:
+
+→ **Output: BIKE** 🏍️
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, denoting the number of test cases.
+- Each test case contains two space-separated integers **X** and **Y**, representing the time taken by the bike and car, respectively.
+
+### 📌 Constraints
+
+**1 ≤ T ≤ 100**
+
+**1 ≤ X, Y ≤ 10**
+
+### 📤 Output Format
+
+For each test case, print:
+
+- **"BIKE"** if the bike is faster.
+- **"CAR"** if the car is faster.
+- **"SAME"** if both take the same time.
+
+The output is case-insensitive.
+
+### 🧪 Sample Input 0
+
+```text id="m5x2vb"
+3
+1 5
+4 2
+6 6
+```
+
+### ✅ Sample Output 0
+
+```text id="p8k4na"
+BIKE
+CAR
+SAME
+```
+
+### 📝 Explanation
+
+- **Test Case 1:** The bike takes 1 minute, while the car takes 5 minutes. The bike is faster, so the output is **BIKE**.
+- **Test Case 2:** The bike takes 4 minutes, while the car takes 2 minutes. The car is faster, so the output is **CAR**.
+- **Test Case 3:** Both the bike and car take 6 minutes. Therefore, the output is **SAME**.

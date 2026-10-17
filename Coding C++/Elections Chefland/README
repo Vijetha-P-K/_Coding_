@@ -1,0 +1,71 @@
+# 🗳️ ELECTIONS IN CHEFLAND
+
+Election season has started in Chefland, and the election commission wants to determine the number of eligible voters.
+
+There are **N people** in Chefland, and the age of the \(i\)-th person is represented by **Aᵢ**.
+
+A person is eligible to vote if their age is **at least X years**.
+
+Given the ages of all people and the minimum voting age **X**, determine the total number of eligible voters.
+
+### 💡 Example
+
+**N = 5, X = 3**
+
+Ages: `1 2 3 4 5`
+
+The people aged **3, 4, and 5** meet the minimum voting age requirement.
+
+Therefore, the number of eligible voters is **3**.
+
+→ **Output: 3** ✅
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, representing the number of test cases.
+- For each test case:
+  - The first line contains two space-separated integers **N and X**, representing the number of people and the minimum age required to vote, respectively.
+  - The second line contains **N** space-separated integers **A₁, A₂, ..., Aₙ**, representing the ages of the people.
+
+### 📌 Constraints
+
+- **1 ≤ T ≤ 200**
+- **1 ≤ N ≤ 100**
+- **1 ≤ Aᵢ, X ≤ 100**
+
+### 📤 Output Format
+
+For each test case, print the number of eligible voters on a new line.
+
+### 🧪 Sample Input 0
+
+```text id="m8q4vx"
+4
+4 3
+5 3 1 2
+3 2
+1 3 2
+4 2
+1 2 4 4
+5 6
+1 2 3 4 5
+```
+
+### ✅ Sample Output 0
+
+```text id="r6k2pz"
+2
+2
+3
+0
+```
+
+### 📝 Explanation
+
+**Test Case 1:** The minimum voting age is **3 years**. Two people have ages greater than or equal to 3. Therefore, the output is **2**.
+
+**Test Case 2:** The minimum voting age is **2 years**. Two people have ages greater than or equal to 2. Therefore, the output is **2**.
+
+**Test Case 3:** The minimum voting age is **2 years**. Three people have ages greater than or equal to 2. Therefore, the output is **3**.
+
+**Test Case 4:** The minimum voting age is **6 years**. No person is at least 6 years old. Therefore, the output is **0**.

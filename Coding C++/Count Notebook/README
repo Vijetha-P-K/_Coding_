@@ -1,0 +1,60 @@
+# 📚 COUNT THE NOTEBOOKS
+
+A notebook factory uses **pulp** to manufacture notebooks.
+
+- **1 kg of pulp** can produce **1000 pages**.
+- **1 notebook** consists of **100 pages**.
+
+Given **N kilograms of pulp**, determine the total number of notebooks that can be made.
+
+### 💡 Example:
+
+**N = 1**
+
+Pages produced:
+
+\(1 \times 1000 = 1000\) pages
+
+Number of notebooks:
+
+\(\frac{1000}{100} = 10\) notebooks
+
+→ **Output: 10** ✅
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, denoting the number of test cases.
+- Each test case contains a single integer **N**, representing the weight of pulp available in kilograms.
+
+### 📌 Constraints
+
+**1 ≤ T ≤ 100**
+
+**1 ≤ N ≤ 100**
+
+### 📤 Output Format
+
+For each test case, print the number of notebooks that can be made using **N kilograms of pulp** on a new line.
+
+### 🧪 Sample Input 0
+
+```text id="f6v2ma"
+3
+1
+100
+50
+```
+
+### ✅ Sample Output 0
+
+```text id="v8j3kp"
+10
+1000
+500
+```
+
+### 📝 Explanation
+
+- **Test Case 1:** 1 kg of pulp produces \(1 \times 1000 = 1000\) pages. Therefore, \(1000 / 100 = 10\) notebooks can be made.
+- **Test Case 2:** 100 kg of pulp produces \(100 \times 1000 = 100000\) pages. Therefore, \(100000 / 100 = 1000\) notebooks can be made.
+- **Test Case 3:** 50 kg of pulp produces \(50 \times 1000 = 50000\) pages. Therefore, \(50000 / 100 = 500\) notebooks can be made.

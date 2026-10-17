@@ -1,0 +1,74 @@
+# 📝 PROBLEMS IN YOUR TO-DO LIST
+
+CodeChef recently revamped its practice page to help users find problems more easily. It introduced several features, including recent contest problems, separate tabs for unattempted and attempted problems, difficulty ratings, and popular topics.
+
+Chef discovered that he could add problems to his personal to-do list using the **+ symbol** on each problem page. Excited about this feature, he added many problems without checking their difficulty ratings.
+
+Chef is a beginner and should ideally solve only problems with a difficulty rating **strictly less than 1000**.
+
+Given the difficulty ratings of all problems in Chef's to-do list, determine how many problems he must remove so that every remaining problem has a difficulty rating less than **1000**.
+
+### 💡 Example
+
+**N = 5**
+
+Difficulty ratings: `800 1200 900 1000 700`
+
+Chef must remove the problems with difficulty ratings **1200** and **1000**, because both ratings are greater than or equal to 1000.
+
+→ **Output: 2** ✅
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, representing the number of test cases.
+- For each test case:
+  - The first line contains an integer **N**, representing the total number of problems in Chef's to-do list.
+  - The second line contains **N** space-separated integers **D₁, D₂, ..., Dₙ**, representing the difficulty ratings of the problems.
+
+### 📌 Constraints
+
+- **1 ≤ T ≤ 1000**
+- **1 ≤ N ≤ 1000**
+- **1 ≤ Dᵢ ≤ 5000**
+
+### 📤 Output Format
+
+For each test case, print the number of problems Chef must remove so that all remaining problems have difficulty ratings strictly less than **1000**.
+
+### 🧪 Sample Input 0
+
+```text id="p7x4md"
+5
+3
+800 1200 900
+4
+999 1000 1001 1002
+5
+1 2 2 2 5000
+5
+1000 1000 1000 1000 1000
+3
+900 700 800
+```
+
+### ✅ Sample Output 0
+
+```text id="x3v8ka"
+1
+3
+1
+5
+0
+```
+
+### 📝 Explanation
+
+**Test Case 1:** The ratings are **800, 1200, and 900**. Only **1200** is greater than or equal to 1000. Therefore, the answer is **1**.
+
+**Test Case 2:** The ratings **1000, 1001, and 1002** are greater than or equal to 1000. Therefore, the answer is **3**.
+
+**Test Case 3:** Only the rating **5000** is greater than or equal to 1000. Therefore, the answer is **1**.
+
+**Test Case 4:** All five problems have a rating of **1000**, so Chef must remove all of them. Therefore, the answer is **5**.
+
+**Test Case 5:** All ratings are less than **1000**, so Chef does not need to remove any problems. Therefore, the answer is **0**.

@@ -1,0 +1,66 @@
+# 🏆 QUALIFY THE ROUND
+
+In a coding contest, there are two types of problems:
+
+- **Easy Problems:** Each problem is worth **1 point**.
+- **Hard Problems:** Each problem is worth **2 points**.
+
+To qualify for the next round, a contestant must score at least **X points**.
+
+Chef has solved **A easy problems** and **B hard problems**. Determine whether Chef qualifies for the next round.
+
+### 💡 Example
+
+**X = 15, A = 9, B = 3**
+
+Chef's total score is:
+
+- Easy problems: **9 × 1 = 9 points**
+- Hard problems: **3 × 2 = 6 points**
+- Total score: **9 + 6 = 15 points**
+
+Since Chef's score is equal to the required **15 points**, he qualifies.
+
+→ **Output: Qualify** ✅
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, representing the number of test cases.
+- Each test case contains three space-separated integers **X, A, and B**, representing the minimum qualifying score, the number of easy problems solved, and the number of hard problems solved, respectively.
+
+### 📌 Constraints
+
+- **1 ≤ T ≤ 100**
+- **1 ≤ X ≤ 100**
+- **0 ≤ A, B ≤ 100**
+
+### 📤 Output Format
+
+For each test case, print **Qualify** if Chef scores at least **X points**. Otherwise, print **NotQualify**.
+
+The output is case-insensitive.
+
+### 🧪 Sample Input 0
+
+```text id="v8m2qa"
+3
+15 9 3
+5 3 0
+6 2 8
+```
+
+### ✅ Sample Output 0
+
+```text id="k4p7xs"
+Qualify
+NotQualify
+Qualify
+```
+
+### 📝 Explanation
+
+**Test Case 1:** Chef solves **9 easy problems** and **3 hard problems**. His total score is **9 × 1 + 3 × 2 = 15 points**. Since he needs at least 15 points, he qualifies. Therefore, the output is **Qualify**.
+
+**Test Case 2:** Chef solves **3 easy problems** and **0 hard problems**. His total score is **3 × 1 + 0 × 2 = 3 points**. Since he needs at least 5 points, he does not qualify. Therefore, the output is **NotQualify**.
+
+**Test Case 3:** Chef solves **2 easy problems** and **8 hard problems**. His total score is **2 × 1 + 8 × 2 = 18 points**. Since he needs at least 6 points, he qualifies. Therefore, the output is **Qualify**.

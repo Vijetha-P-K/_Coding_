@@ -5,32 +5,16 @@ int main() {
     int n;
     cin >> n;
 
-    int evenSum = 0;
-    int oddSum = 0;
-    int rem;
-
-    while(n != 0) {
-        rem = n % 10;
-
-        if(rem % 2 == 0) {
-            evenSum += rem;
-        }
-        else {
-            oddSum += rem;
-        }
-
-        n = n / 10;
+    int evenSum = 0, oddSum = 0;
+    while (n > 0) {
+        int d = n % 10;
+        if (d % 2 == 0) evenSum += d;
+        else oddSum += d;
+        n /= 10;
     }
 
-    if(evenSum == oddSum) {
-        cout << "Balanced";
-    }
-    else if(evenSum > oddSum) {
-        cout << "Even Dominant";
-    }
-    else {
-        cout << "Odd Dominant";
-    }
-
+    if (evenSum == oddSum) cout << "Balanced" << endl;
+    else if (evenSum > oddSum) cout << "Even Dominant" << endl;
+    else cout << "Odd Dominant" << endl;
     return 0;
 }

@@ -1,0 +1,72 @@
+# 🛍️ MOST EXPENSIVE ITEMS
+
+Chef is given the prices of **N items** and wants to buy exactly **K items**.
+
+Help Chef find the **maximum possible total price** by choosing the **K most expensive items** from the given list.
+
+### 💡 Example
+
+**N = 5, K = 2**
+
+Item prices: `4 9 1 7 6`
+
+The two highest prices are **9** and **7**.
+
+Total price = **9 + 7 = 16**
+
+→ **Output: 16** ✅
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, representing the number of test cases.
+- For each test case:
+  - The first line contains two space-separated integers **N and K**, representing the total number of items and the number of items Chef wants to buy.
+  - The second line contains **N** space-separated integers **C₁, C₂, ..., Cₙ**, representing the prices of the items.
+
+### 📌 Constraints
+
+- **1 ≤ T ≤ 100**
+- **1 ≤ K ≤ N ≤ 100**
+- **1 ≤ Cᵢ ≤ 100**
+
+### 📤 Output Format
+
+For each test case, print a single integer representing the total price of the **K most expensive items**.
+
+### 🧪 Sample Input 0
+
+```text id="m7q3vx"
+3
+5 2
+4 9 1 7 6
+4 3
+10 3 8 5
+2 1
+11 4
+```
+
+### ✅ Sample Output 0
+
+```text id="p4k8rz"
+16
+23
+11
+```
+
+### 📝 Explanation
+
+**Test Case 1:** The two highest prices are **9** and **7**.
+
+Total price = **9 + 7 = 16**.
+
+Therefore, the output is **16**.
+
+**Test Case 2:** The three highest prices are **10, 8, and 5**.
+
+Total price = **10 + 8 + 5 = 23**.
+
+Therefore, the output is **23**.
+
+**Test Case 3:** Chef needs to buy only one item. The most expensive item costs **11**.
+
+Therefore, the output is **11**.

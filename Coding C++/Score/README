@@ -1,0 +1,73 @@
+# 🥏 SCORE
+
+Chef takes part in a discus throw competition, where each player gets **three throws**.
+
+A player's final score is the **longest distance** achieved among the three throws.
+
+Chef's throws cover distances of **A, B, and C units**. Determine his final score.
+
+### 💡 Example
+
+**A = 12, B = 9, C = 18**
+
+The distances covered by Chef are **12, 9, and 18 units**.
+
+The longest distance is **18 units**.
+
+→ **Output: 18** ✅
+
+### 📥 Input Format
+
+- The first line contains a single integer **T**, representing the number of test cases.
+- Each test case contains three space-separated integers **A, B, and C**, representing the distances of Chef's three throws.
+
+### 📌 Constraints
+
+- **1 ≤ T ≤ 100**
+- **1 ≤ A, B, C ≤ 100**
+
+### 📤 Output Format
+
+For each test case, print Chef's final score on a separate line.
+
+### 🧪 Sample Input 0
+
+```text id="n8q4vx"
+2
+12 9 18
+25 40 31
+```
+
+### ✅ Sample Output 0
+
+```text id="m5k2pz"
+18
+40
+```
+
+### 📝 Explanation
+
+**Test Case 1:** Chef's throws cover **12, 9, and 18 units**. The third throw covers the longest distance, so his final score is **18**.
+
+**Test Case 2:** Chef's throws cover **25, 40, and 31 units**. The second throw covers the longest distance, so his final score is **40**.
+
+### 🧪 Sample Input 1
+
+```text id="v3r7ka"
+2
+24 24 24
+50 17 50
+```
+
+### ✅ Sample Output 1
+
+```text id="x6p9sz"
+24
+50
+```
+
+### 📝 Explanation
+
+**Test Case 1:** All three throws cover **24 units**. Therefore, Chef's final score is **24**.
+
+**Test Case 2:** The first and third throws both cover **50 units**, which is the longest distance. Therefore, Chef's final score is **50**.

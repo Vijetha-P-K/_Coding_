@@ -2,13 +2,21 @@
 using namespace std;
 
 int main() {
-    int t;
-    cin >> t;
+    int T;
+    cin >> T;
 
-    while (t--) {
-        int x, y, z;
-        cin >> x >> y >> z;
-        if (2 * z > x * y) cout << "YES" << endl;
-        else cout << "NO" << endl;
+    while (T--) {
+        int X, Y, Z;
+        cin >> X >> Y >> Z;
+
+        int total = X * Y;
+
+        if (Z * 2 > total) {
+            cout << "YES" << endl;
+        } else {
+            cout << "NO" << endl;
+        }
     }
+
     return 0;
+}

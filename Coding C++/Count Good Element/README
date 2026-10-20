@@ -1,0 +1,64 @@
+# 📊 COUNT GOOD ELEMENTS
+
+You are given an array **A** containing **N integers**.
+
+An element \(A_i\) is considered **good** if it is strictly smaller than each of the previous **five elements**, or all preceding elements if fewer than five exist.
+
+The first element is always good because it has no preceding elements to compare with.
+
+Your task is to find the **total number of good elements** in the array.
+
+### 💡 Example
+
+**N = 7**
+
+Array: `400 600 550 500 450 425 410`
+
+- **Position 1:** `400` is good because there are no preceding elements.
+- **Positions 2 to 6:** These elements are not good because each is greater than `400`, which lies within its comparison range.
+- **Position 7:** `410` is good because it is strictly smaller than the previous five elements: `600 550 500 450 425`.
+
+Therefore, the total number of good elements is **2**.
+
+→ **Output: 2** ✅
+
+### 📥 Input Format
+
+- The first line contains an integer **T**, representing the number of test cases.
+- For each test case:
+  - The first line contains an integer **N**, representing the size of the array.
+  - The second line contains **N** space-separated integers \(A_1, A_2, \ldots, A_N\), representing the array elements.
+
+### 📌 Constraints
+
+- \(1 \le T \le 100\)
+- \(7 \le N \le 100\)
+- \(350 \le A_i \le 750\)
+
+### 📤 Output Format
+
+For each test case, print the number of good elements on a separate line.
+
+### 🧪 Sample Input 0
+
+```text id="f7m2kx"
+1
+7
+400 600 550 500 450 425 410
+```
+
+### ✅ Sample Output 0
+
+```text id="p4v8zn"
+2
+```
+
+### 📝 Explanation
+
+The good elements are at **positions 1 and 7**.
+
+- **Position 1:** The element `400` is good because it has no preceding elements.
+- **Positions 2 to 6:** These elements are not good because each value is greater than `400`, which is included in its comparison range.
+- **Position 7:** The element `410` is strictly smaller than all five previous elements: `600`, `550`, `500`, `450`, and `425`. Therefore, it is good.
+
+Hence, the total number of good elements is **2**.

@@ -1,14 +1,20 @@
+
 #include <iostream>
 using namespace std;
 
 int main() {
-    int t;
-    cin >> t;
+    int T;
+    cin >> T;
 
-    while (t--) {
-        int x, y;
-        cin >> x >> y;
-        cout << (x * y) / 100 << endl;
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        int coins = X * Y;
+        int bags = coins / 100;
+
+        cout << bags << endl;
     }
+
     return 0;
 }

@@ -2,13 +2,15 @@
 using namespace std;
 
 int main() {
-    int t;
-    cin >> t;
+    int T;
+    cin >> T;
 
-    while (t--) {
-        int x, y;
-        cin >> x >> y;
-        cout << 4 * x + y << endl;
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        cout << (4 * X) + Y << endl;
     }
+
     return 0;
 }

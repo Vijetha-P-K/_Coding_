@@ -2,14 +2,18 @@
 using namespace std;
 
 int main() {
-    int t;
-    cin >> t;
+    int T;
+    cin >> T;
 
-    while (t--) {
-        int x;
-        cin >> x;
-        if (x + 3 <= 10) cout << "Yes" << endl;
-        else cout << "No" << endl;
+    while (T--) {
+        int X;
+        cin >> X;
+
+        if (X + 3 <= 10)
+            cout << "Yes" << endl;
+        else
+            cout << "No" << endl;
     }
+
     return 0;
 }

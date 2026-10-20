@@ -1,32 +1,32 @@
- #include <iostream>
+#include <iostream>
+#include <vector>
+#include <string>
 using namespace std;
-
-char s[200][205];
 
 int main() {
     int n;
     cin >> n;
+
+    vector<string> strs(n);
+
     for (int i = 0; i < n; i++) {
-        cin >> s[i];
+        cin >> strs[i];
     }
 
-    int len = 0;
-    bool stop = false;
+    string prefix = strs[0];
 
-    while (!stop) {
-        char c = s[0][len];
-        if (c == '\0') break;  
+    for (int i = 1; i < n; i++) {
+        while (strs[i].find(prefix) != 0) {
+            prefix.pop_back();
 
-        for (int j = 1; j < n; j++) {
-            if (s[j][len] != c) {  
-                stop = true;
-                break;
+            if (prefix.empty()) {
+                cout << "\"\"" << endl;
+                return 0;
             }
         }
-        if (!stop) len++;
     }
 
-    for (int i = 0; i < len; i++) cout << s[0][i];
-    cout << endl;
+    cout << "\"" << prefix << "\"" << endl;
+
     return 0;
 }

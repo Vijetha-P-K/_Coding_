@@ -1,0 +1,67 @@
+# 🔢 UNIQUE ELEMENTS 2
+
+You are given an array **A** containing **N integers**. The array may contain duplicate elements.
+
+Your task is to print all **distinct elements** of the array in the order of their first occurrence. Each element must appear exactly once in the output.
+
+### 💡 Example
+
+**N = 7**
+
+Array: `5 5 8 8 3 5 3`
+
+The distinct elements in the order of their first occurrence are **5, 8, 3**.
+
+→ **Output: `5 8 3`** ✅
+
+### 📥 Input Format
+
+- The first line contains an integer **N**, representing the size of the array.
+- The second line contains **N** space-separated integers \(A_1, A_2, \ldots, A_N\), representing the array elements.
+
+### 📌 Constraints
+
+- \(1 \le N \le 10^5\)
+- \(1 \le A_i \le 10^5\)
+
+### 📤 Output Format
+
+Print all distinct elements separated by a single space, preserving their order of first occurrence.
+
+### 🧪 Sample Input 0
+
+```text id="k7p2vx"
+7
+5 5 8 8 3 5 3
+```
+
+### ✅ Sample Output 0
+
+```text id="w4n6qs"
+5 8 3
+```
+
+### 📝 Explanation
+
+The element **5** appears first, followed by **8** and **3**.
+
+All subsequent occurrences of these elements are ignored. Therefore, the distinct elements in their original order are **5 8 3**.
+
+### 🧪 Sample Input 1
+
+```text id="m3r8zd"
+9
+12 7 12 4 7 15 4 9 15
+```
+
+### ✅ Sample Output 1
+
+```text id="c5y1hf"
+12 7 4 15 9
+```
+
+### 📝 Explanation
+
+The distinct elements are **12**, **7**, **4**, **15**, and **9**, in the order of their first occurrence.
+
+Repeated occurrences of these elements are excluded from the output. Therefore, the answer is **12 7 4 15 9**.

@@ -1,18 +1,21 @@
-#include <bits/stdc++.h>
+
+#include <iostream>
 using namespace std;
 
 int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int a, b, c;
-        cin >> a >> b >> c;
-        if (max(a, c) <= b) {
-            cout << "Yes\n";
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int A, B, C;
+        cin >> A >> B >> C;
+
+        if (max(A, C) <= B) {
+            cout << "Yes" << endl;
         } else {
-            cout << "No\n";
+            cout << "No" << endl;
         }
     }
-    
+
     return 0;
 }

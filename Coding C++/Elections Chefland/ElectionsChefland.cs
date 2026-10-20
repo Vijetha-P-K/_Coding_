@@ -1,23 +1,27 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n, x;
-        cin >> n >> x;
-        
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N, X;
+        cin >> N >> X;
+
         int count = 0;
-        for (int i = 0; i < n; i++) {
+
+        for (int i = 0; i < N; i++) {
             int age;
             cin >> age;
-            if (age >= x) {
+
+            if (age >= X) {
                 count++;
             }
         }
-        cout << count << "\n";
+
+        cout << count << endl;
     }
-    
+
     return 0;
 }

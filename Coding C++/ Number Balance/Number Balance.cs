@@ -1,20 +1,32 @@
+
 #include <iostream>
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
+    int N;
+    cin >> N;
 
     int evenSum = 0, oddSum = 0;
-    while (n > 0) {
-        int d = n % 10;
-        if (d % 2 == 0) evenSum += d;
-        else oddSum += d;
-        n /= 10;
+
+    while (N > 0) {
+        int digit = N % 10;
+
+        if (digit % 2 == 0) {
+            evenSum += digit;
+        } else {
+            oddSum += digit;
+        }
+
+        N = N / 10;
     }
 
-    if (evenSum == oddSum) cout << "Balanced" << endl;
-    else if (evenSum > oddSum) cout << "Even Dominant" << endl;
-    else cout << "Odd Dominant" << endl;
+    if (evenSum == oddSum) {
+        cout << "Balanced";
+    } else if (evenSum > oddSum) {
+        cout << "Even Dominant";
+    } else {
+        cout << "Odd Dominant";
+    }
+
     return 0;
 }

@@ -1,19 +1,20 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main() {
-    int t;
-    cin >> t;
-    
-    for(int i = 0; i < t; i++) {
-        int a, b, x, y;
-        cin >> a >> b >> x >> y;
-        if ((x * y) >= (a * b)) {
-            cout << "Yes" << "\n";
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int A, B, X, Y;
+        cin >> A >> B >> X >> Y;
+
+        if (X * Y >= A * B) {
+            cout << "Yes" << endl;
         } else {
-            cout << "No" << "\n";
+            cout << "No" << endl;
         }
     }
-    
+
     return 0;
 }

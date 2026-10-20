@@ -1,21 +1,22 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main() {
-    
-    int t;
-    cin >> t;
-    while (t--) {
-        int n, x;
-        cin >> n >> x;
-        if (x >= n) {
-            cout << 0 << "\n";
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N, X;
+        cin >> N >> X;
+
+        int need = N - X;
+
+        if (need <= 0) {
+            cout << 0 << endl;
         } else {
-            int needed = n - x;
-            int packets = (needed + 3) / 4;
-            cout << packets << "\n";
+            cout << (need + 3) / 4 << endl;
         }
     }
-    
+
     return 0;
 }

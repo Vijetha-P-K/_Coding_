@@ -1,15 +1,15 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        int cars = (n + 3) / 4;
-        cout << cars << "\n";
+    int T, N;
+    cin >> T;
+
+    while (T--) {
+        cin >> N;
+
+        cout << (N + 3) / 4 << endl;
     }
-    
+
     return 0;
 }

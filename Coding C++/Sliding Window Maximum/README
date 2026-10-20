@@ -1,0 +1,93 @@
+# 🪟 SLIDING WINDOW MAXIMUM
+
+You are given an array \(A = [A_1, A_2, \ldots, A_N]\) containing **N integers** and an integer **X**, representing the size of the sliding window.
+
+Find the **maximum element in every contiguous subarray of size X**, considering the subarrays from left to right.
+
+The window moves one position to the right each time until it reaches the end of the array.
+
+The total number of windows is \(N-X+1\).
+
+### 💡 Example
+
+**N = 4, X = 2**
+
+Array: `1 2 3 4`
+
+The subarrays and their maximum values are:
+
+- `[1, 2]` → Maximum = `2`
+- `[2, 3]` → Maximum = `3`
+- `[3, 4]` → Maximum = `4`
+
+Therefore, the output is `2 3 4`.
+
+→ **Output: `2 3 4`** ✅
+
+### 📥 Input Format
+
+- The first line contains an integer **T**, representing the number of test cases.
+- For each test case:
+  - The first line contains two space-separated integers **N** and **X**, representing the array size and the sliding window size.
+  - The second line contains **N** space-separated integers \(A_1, A_2, \ldots, A_N\), representing the array elements.
+
+### 📌 Constraints
+
+- \(1 \le T \le 100\)
+- \(1 \le X \le N \le 10^5\)
+- \(1 \le A_i \le 10^9\)
+- The sum of **N** over all test cases does not exceed \(2 \times 10^5\).
+
+### 📊 Subtasks
+
+- **Subtask 1 (30 points):** \(1 \le X \le N \le 1000\)
+- **Subtask 2 (70 points):** Original constraints.
+
+### 📤 Output Format
+
+For each test case, print \(N-X+1\) space-separated integers on a single line.
+
+The \(i\)-th integer must be the maximum element in the subarray starting at position \(i\) and containing exactly **X elements**.
+
+### 🧪 Sample Input 0
+
+```text id="v7x3qm"
+3
+4 2
+1 2 3 4
+4 3
+4 3 2 1
+3 1
+9 7 10
+```
+
+### ✅ Sample Output 0
+
+```text id="k5p8zn"
+2 3 4
+4 3
+9 7 10
+```
+
+### 📝 Explanation
+
+**Test Case 1:** The array is `1 2 3 4`, and the window size is **2**.
+
+- `[1, 2]` → Maximum = `2`
+- `[2, 3]` → Maximum = `3`
+- `[3, 4]` → Maximum = `4`
+
+Therefore, the output is `2 3 4`.
+
+**Test Case 2:** The array is `4 3 2 1`, and the window size is **3**.
+
+- `[4, 3, 2]` → Maximum = `4`
+- `[3, 2, 1]` → Maximum = `3`
+
+Therefore, the output is `4 3`.
+
+**Test Case 3:** The array is `9 7 10`, and the window size is **1**.
+
+Each window contains only one element, so its maximum is the element itself.
+
+Therefore, the output is `9 7 10`.

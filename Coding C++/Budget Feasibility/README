@@ -1,0 +1,65 @@
+# 💰 BUDGET FEASIBILITY
+
+You are given two integers **X** and **Y**.
+
+- **X** represents the available budget.
+- **Y** represents the amount required per day.
+
+Chef needs to cover expenses for exactly **30 days**. Determine whether the available budget is sufficient to cover the total expenses for all 30 days.
+
+If the budget is sufficient, print **YES**. Otherwise, print **NO**.
+
+### 💡 Example
+
+**X = 900, Y = 30**
+
+Total expense = \(30 \times 30 = 900\) rupees.
+
+Since the available budget is equal to the total expense, the budget is sufficient.
+
+→ **Output: YES** ✅
+
+### 📥 Input Format
+
+- The first line contains an integer **T**, representing the number of test cases.
+- Each test case contains two space-separated integers **X** and **Y**, representing the available budget and the daily expense, respectively.
+
+### 📌 Constraints
+
+- \(1 \le T \le 100\)
+- \(1 \le X, Y \le 10^5\)
+
+### 📤 Output Format
+
+For each test case, print **YES** if the available budget is sufficient to cover expenses for 30 days. Otherwise, print **NO**.
+
+The output is case-insensitive, so `YES`, `yes`, or `Yes` are all accepted.
+
+### 🧪 Sample Input 0
+
+```text id="t8xk3m"
+4
+900 30
+500 20
+1200 35
+100 4
+```
+
+### ✅ Sample Output 0
+
+```text id="f4nq2v"
+YES
+NO
+YES
+NO
+```
+
+### 📝 Explanation
+
+**Test Case 1:** The total expense is \(30 \times 30 = 900\). Since the available budget is **900**, it is sufficient. Therefore, the output is **YES**.
+
+**Test Case 2:** The total expense is \(30 \times 20 = 600\). Since the available budget is **500**, it is insufficient. Therefore, the output is **NO**.
+
+**Test Case 3:** The total expense is \(30 \times 35 = 1050\). Since the available budget is **1200**, it is sufficient. Therefore, the output is **YES**.
+
+**Test Case 4:** The total expense is \(30 \times 4 = 120\). Since the available budget is **100**, it is insufficient. Therefore, the output is **NO**.

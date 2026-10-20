@@ -1,15 +1,16 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        cin >> n;
-        int notebooks = n * 10;
-        cout << notebooks << "\n";
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N;
+        cin >> N;
+
+        cout << N * 10 << endl;
     }
-    
+
     return 0;
 }

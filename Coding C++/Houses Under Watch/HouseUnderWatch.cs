@@ -1,33 +1,49 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main() {
-    int t;
-    cin >> t;
-    int m , x , y;
-    for(int i=0;i<t;i++){
-        cin >> m >> x >> y;
-    int max1 = x * y;
-    bool v[101] = {false};
-    
-    for(int i=0;i<m;i++){
-        int pos;
-        cin >> pos;
-        
-        int s = max(1 , pos - max1);
-        int e = min(100 , pos + max1);
-        
-        for(int h = s;h<=e;h++){
-            v[h] = true;
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int M, X, Y;
+        cin >> M >> X >> Y;
+
+        int A[10];
+        int safe[101] = {0};
+        int distance = X * Y;
+
+        for (int i = 0; i < M; i++) {
+            cin >> A[i];
         }
-    }
-    int safe = 0;
-    for(int h=1;h<=100;h++){
-        if(!v[h]){
-            safe++;
+
+        for (int i = 0; i < M; i++) {
+            int left = A[i] - distance;
+            int right = A[i] + distance;
+
+            if (left < 1) {
+                left = 1;
+            }
+
+            if (right > 100) {
+                right = 100;
+            }
+
+            for (int j = left; j <= right; j++) {
+                safe[j] = 1;
+            }
         }
+
+        int count = 0;
+
+        for (int i = 1; i <= 100; i++) {
+            if (safe[i] == 0) {
+                count++;
+            }
+        }
+
+        cout << count << endl;
     }
-    cout << safe << "\n";
-    }
+
     return 0;
 }

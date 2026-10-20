@@ -1,0 +1,56 @@
+# 🔄 REVERSE THE NUMBER
+
+Given an integer **N**, write a program to reverse its digits and display the resulting number.
+
+For example, reversing **12345** gives **54321**. Any zeros at the beginning of the reversed number are not displayed.
+
+### 💡 Example
+
+**N = 31203**
+
+Reversed number = **30213**
+
+→ **Output: 30213** ✅
+
+### 📥 Input Format
+
+- The first line contains an integer **T**, representing the total number of test cases.
+- Each of the next **T** lines contains an integer **N**.
+
+### 📌 Constraints
+
+- \(1 \le T \le 1000\)
+- \(1 \le N \le 1000000\)
+
+### 📤 Output Format
+
+For each test case, print the reverse of the given number **N** on a separate line.
+
+### 🧪 Sample Input 0
+
+```text
+4
+12345
+31203
+2123
+2300
+```
+
+### ✅ Sample Output 0
+
+```text
+54321
+30213
+3212
+32
+```
+
+### 📝 Explanation
+
+**Test Case 1:** The number is **12345**. Reversing its digits gives **54321**.
+
+**Test Case 2:** The number is **31203**. Reversing its digits gives **30213**.
+
+**Test Case 3:** The number is **2123**. Reversing its digits gives **3212**.
+
+**Test Case 4:** The number is **2300**. Reversing its digits gives **0032**. The leading zeros are omitted, so the result is **32**.
